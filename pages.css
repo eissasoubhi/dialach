@@ -1,0 +1,75 @@
+#TopMenu{
+    Home, About, FAQ, (icon)
+                      | Info
+                      | Setting
+                      | Log out
+}
+
+#LeftMenu{
+    Groups,
+    Creditors,
+    Debtors,
+    Operations,
+}
+
+#GroupsView{
+    #ListOfGroups
+}
+
+#GroupView{
+    #TopMenu{
+        #Button Delete,
+        #Button Rename
+    },
+    #BottomMenu{
+        #Button Members,
+        #Button Operations
+    }
+}
+
+#CreditorsView{
+    #ListOfCreditors
+}
+
+#CreditorsView{
+    #ListOfCreditors
+}
+
+#MembersView{
+    #ListOfMembers{
+        #ListItem{
+            #ItemOptions{ Delete }
+        }
+    }
+}
+
+#MemberView{
+    #Image,
+    #Text Full name,
+    #Debts,
+    #Credits,
+    #BottomMenu{
+        #Button Delete,
+        #Button Operations
+    }
+}
+
+#OperationsView{
+    #ListOfOperations
+}
+
+#MemberOperationsView{
+    #Breadcrumb Group1 > Member1 > Operations,
+    #ListOfOperations
+}
+
+#OperationView{
+    #Breadcrumb Group1 > Member1 > Operations > mm/dd/yyyy hh-mm,
+    #DateTime,
+    #Text Amount
+    #Text Description
+    #BottomMenu{
+        #Button Delete,
+        #Button Edit
+    }
+}
